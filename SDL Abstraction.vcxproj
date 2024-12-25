@@ -127,14 +127,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AnimatedSprite.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="ResourceManager.cpp" />
     <ClCompile Include="TextureRectangle.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="..\..\..\..\OneDrive\Documents\edited.png" />
     <Image Include="..\..\..\..\OneDrive\Documents\file.png" />
     <Image Include="..\..\..\..\OneDrive\Documents\greenland_grid_velo.bmp" />
+    <Image Include="..\..\..\..\OneDrive\Documents\sprite_sheet.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AnimatedSprite.h" />
+    <ClInclude Include="ResourceManager.h" />
     <ClInclude Include="TextureRectangle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

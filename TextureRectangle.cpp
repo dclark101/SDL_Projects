@@ -2,23 +2,22 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 #include "TextureRectangle.h"
-
+#include "ResourceManager.h"
 using namespace std;
 
 TextureRectangle::TextureRectangle(SDL_Renderer*& renderer, string file_path) {
-	SDL_Surface* surface = IMG_Load(file_path.c_str());
+	SDL_Surface* retrieve_surface = ResourceManager::GetInstance().GetSurface("C:\\Users\\Dante Clark\\OneDrive\\Documents\\file.png");
+	m_texture = SDL_CreateTextureFromSurface(renderer, retrieve_surface);
 
-	if (surface == nullptr) {
+	if (retrieve_surface == nullptr) {
 		cout << "image failed to load onto surface.\n" << IMG_GetError();
 	}
 
-	m_texture = SDL_CreateTextureFromSurface(renderer, surface);
+	m_texture = SDL_CreateTextureFromSurface(renderer, retrieve_surface);
 
 	if (m_texture == nullptr) {
 		cout << "texture failed to load from surface.\n" << SDL_GetError();
 	}
-
-	SDL_FreeSurface(surface);
 }
 TextureRectangle::~TextureRectangle() {
 	SDL_DestroyTexture(m_texture);

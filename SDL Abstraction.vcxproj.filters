@@ -13,7 +13,7 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Resource Files\assets">
+    <Filter Include="Resource Files\images">
       <UniqueIdentifier>{d251d94b-8fd3-4e64-bc88-2fe423b103d9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -24,17 +24,35 @@
     <ClCompile Include="TextureRectangle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimatedSprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\..\..\..\OneDrive\Documents\file.png">
-      <Filter>Resource Files\assets</Filter>
+      <Filter>Resource Files\images</Filter>
     </Image>
     <Image Include="..\..\..\..\OneDrive\Documents\greenland_grid_velo.bmp">
-      <Filter>Resource Files\assets</Filter>
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="..\..\..\..\OneDrive\Documents\sprite_sheet.jpg">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="..\..\..\..\OneDrive\Documents\edited.png">
+      <Filter>Resource Files\images</Filter>
     </Image>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TextureRectangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimatedSprite.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
